@@ -1,3 +1,0 @@
-C:/Users/ArtAdmin/CLionProjects/bank_deposit/cmake-build-debug/CMakeFiles/bank_deposit.dir
-C:/Users/ArtAdmin/CLionProjects/bank_deposit/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/ArtAdmin/CLionProjects/bank_deposit/cmake-build-debug/CMakeFiles/rebuild_cache.dir

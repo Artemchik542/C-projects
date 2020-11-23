@@ -6,12 +6,28 @@ typedef struct List {
     char *next; // ссылка на следующий элемент списа
 } List;
 
+void foo (int *p){
+    *p = *p + 10;
+}
+
+void buzz (int* d){
+    int h = 8;
+    *d = &h;
+}
+
+void bar (){
+    int a = 7;
+    int* b = NULL;
+    buzz(b);
+    foo(&a);
+}
+
 void pushList(List **head, int data) { // проталкивание элемента в начало с писка
-    void **tmp = malloc(sizeof(List)); // создание отдельной ветви односвязного списка
-    if (*tmp == NULL);
+    List *tmp = malloc(sizeof(List)); // создание отдельной ветви односвязного списка
+    if (tmp == NULL)
         exit(-1);
-    (**tmp).value = data; // присвоение ему данных
-    (*tmp).next = *head; // и присвоение ему ссылки на head
+    tmp->value = data; // присвоение ему данных
+    tmp->next = *head; // и присвоение ему ссылки на head
     *head = tmp; // теперь tmp встало на место head
 }
 

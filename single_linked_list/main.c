@@ -3,7 +3,7 @@
 
 typedef struct List {
     int value; // значение элемента в списке
-    char *next; // ссылка на следующий элемент списка
+    struct List* next; // ссылка на следующий элемент списка
 } List;
 
 void pushList(List** head, int data) { // проталкивание элемента в начало списка
